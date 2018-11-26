@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="161px" viewBox="0 0 150 161" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>popup@50-left</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="email-editor---signup-form-landing-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="8a-editor---page-layout-palette" transform="translate(-211.000000, -143.000000)">
+            <g id="Rectangle-1-+-Rectangle-1-Copy-2-+-Group-23-+-x-Mask" transform="translate(0.000000, 67.000000)">
+                <g id="Bitmap">
+                    <g id="Group-19" transform="translate(0.000000, -2.000000)">
+                        <g id="left_align" transform="translate(211.000000, 78.000000)">
+                            <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="2" y="2.0125" width="146" height="155.96875" rx="2"></rect>
+                            <path d="M1,3.0138086 C1,1.9050646 1.88784725,1.00625 3.00796389,1.00625 L146.992036,1.00625 C148.101004,1.00625 149,1.90445169 149,3.0138086 L149,19.11875 L1,19.11875 L1,3.0138086 Z" id="Rectangle" fill="#EBEDEE" fill-rule="evenodd"></path>
+                            <rect id="Rectangle-3" fill="#D7DADD" fill-rule="evenodd" x="21" y="35.21875" width="54" height="17.10625" rx="2"></rect>
+                            <polygon id="Line" fill="#D7DADD" fill-rule="nonzero" points="0 21.13125 150 21.13125 150 19.11875 0 19.11875"></polygon>
+                            <path d="M2,5.50703586 L2,155.492964 C2,157.015009 2.89614879,158.247863 4.00246195,158.247863 L145.997538,158.247863 C147.10519,158.247863 148,157.016068 148,155.492964 L148,5.50703586 C148,3.98499102 147.103851,2.75213675 145.997538,2.75213675 L4.00246195,2.75213675 C2.89480978,2.75213675 2,3.98393207 2,5.50703586 Z M0,5.50703586 C0,2.46558394 1.78906694,0 4.00246195,0 L145.997538,0 C148.208037,0 150,2.46449956 150,5.50703586 L150,155.492964 C150,158.534416 148.210933,161 145.997538,161 L4.00246195,161 C1.79196325,161 0,158.5355 0,155.492964 L0,5.50703586 Z" id="Rectangle" fill="#D7DADD" fill-rule="nonzero"></path>
+                            <rect id="Rectangle-2" fill="#FFFFFF" fill-rule="evenodd" x="7" y="7.04375" width="61" height="6.0375"></rect>
+                            <ellipse id="Oval" fill="#D7DADD" fill-rule="evenodd" cx="140" cy="10.0625" rx="3" ry="3.01875"></ellipse>
+                            <ellipse id="Oval" fill="#D7DADD" fill-rule="evenodd" cx="128" cy="10.0625" rx="3" ry="3.01875"></ellipse>
+                            <polygon id="Line" fill="#D7DADD" fill-rule="nonzero" points="20 64.4 124 64.4 124 61.38125 20 61.38125"></polygon>
+                            <polygon id="Line" fill="#D7DADD" fill-rule="nonzero" points="20 76.475 104 76.475 104 73.45625 20 73.45625"></polygon>
+                            <path d="M20,87.5336592 C20,86.4277591 20.8934882,85.53125 21.9974782,85.53125 L129.002522,85.53125 C130.105699,85.53125 131,86.4229843 131,87.5336592 L131,138.872591 C131,139.978491 130.106512,140.875 129.002522,140.875 L21.9974782,140.875 C20.8943015,140.875 20,139.983266 20,138.872591 L20,87.5336592 Z" id="Rectangle-4" fill="#9ECCE5" fill-rule="evenodd"></path>
+                            <rect id="Rectangle-5" fill="#FFFFFF" fill-rule="evenodd" x="26" y="93.58125" width="47.3749197" height="9.05625" rx="2"></rect>
+                            <rect id="Rectangle-5" fill="#FFFFFF" fill-rule="evenodd" x="26" y="108.675" width="47.3749197" height="9.05625" rx="2"></rect>
+                            <rect id="Rectangle-5" fill="#0D76C1" fill-rule="evenodd" x="26" y="123.76875" width="47.3749197" height="9.05625" rx="2"></rect>
+                            <rect id="Rectangle-5" fill="#FFFFFF" fill-rule="evenodd" x="77.4356271" y="93.58125" width="47.3749197" height="9.05625" rx="2"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
