@@ -1,0 +1,224 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no">
+  <title>Landing Page Preview</title>
+
+  <link rel="stylesheet" href="https://static.ctctcdn.com/lp/fonts/whitney/whitney-current.css">
+  <script src="https://static.ctctcdn.com/h/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://static.ctctcdn.com/h/jquery-ui/1.9.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://static.ctctcdn.com/js/fed-framework/2.0.0_DEV/fed.css">
+  <script src="https://static.ctctcdn.com/js/fed-framework/2.0.0_DEV/fed.js"></script>
+    <link href="preview.css" rel="stylesheet" type="text/css"><!-- (4) jQuery -->
+
+
+  <style>
+
+
+
+    body {
+      margin: 0;
+    }
+	.fed-wrapper .Structure-editor-palette-container {
+	    -webkit-flex: 0 0 400px;
+	    -ms-flex: 0 0 400px;
+	    flex: 0 0 400px;
+	    background: #f6f8fa;
+
+	    overflow-x: hidden;
+	    overflow-y: auto;
+	    -webkit-overflow-scrolling: touch;
+	}
+
+
+    .fed-wrapper .artifact-container2 {
+      height: 100%;
+      width: 100%;
+      padding: 1.875rem;
+/*      background: #FAFAFA;
+*/    }
+    .fed-wrapper .artifact {
+      height: auto;
+      width: 700px;
+    }
+    .fed-wrapper .ColorSwatchButton {
+      width: 30px;
+      height: 30px;
+    }
+
+    .fed-wrapper .Tab {
+    position: relative;
+    z-index: 3;
+    font-size: 0;
+	margin: 0;
+/*	padding: 0 0 0 20px;
+*/    border-bottom: 1px solid #CFD8DC;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+    .Image-preview {
+      min-height: 105px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      cursor: pointer;
+    }
+
+	#coupon-lp-editor .Landing-page {
+	    background-color: #f5f5f5;
+	    margin-left: 300px;
+	    top: 68px;
+	    position: absolute;
+	    bottom: 0;
+	    width: calc(100% - 300px);
+	    overflow-y: scroll;
+	}
+
+    .Well {
+                cursor: pointer;
+                background-color:#fff;
+                transition: all .25s ease-in-out;
+                box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0);
+                
+                
+            }
+            .Well h4 {
+                transition: all .2s ease-in-out;
+                
+                
+            }
+
+            .Well:hover, .Well:focus {
+                background-color:#fff;
+                border-color: var(--newBlue);
+                box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, .2);
+                transform:  translateY(-2px);
+                
+            }
+            .well1:hover, .well1:focus {
+                border-color: var(--newBlue);
+                
+            } 
+            .well4:hover h4,.well4:hover h3 {
+                transition: all .2s ease-in-out;
+                color:var(--newBlue)
+                
+            }
+            .wellBlue:hover {
+                transition: all .2s ease-in-out;
+                background-color: var(--toolkitBlue);
+                
+            }
+
+            .responsive-img {
+            	width: 100%;
+    			height: auto;
+            }
+  </style>
+
+</head>
+
+<body>
+  <div class="fed-wrapper">
+                  <div class="artifact-container2">
+
+
+
+                        <div class="artifact Layout-col-12 u-centerBlock">
+                          
+
+                          <!-- <div id="live-preview-region"> -->
+                            <div class="">
+    <!--                          <div class="Landing-page u-padding" id="page-background-target">
+     -->                <div class="Story-frame u-centerBlock u-padding" id="inner-background-target" style="background-color: rgb(255, 255, 255);">
+                      <div class="u-textCenter u-marginBottom">
+                        <img src="img/calavera_logo_1_large.png"  class="u-marginTop landing-logo" id="image-target">
+                        
+                      </div>
+                      <div class="u-fontSizeKilo u-weightSemiBold u-textCenter u-textBreak" id="headline-target" style="color: rgb(0, 0, 0);">Sign up to Stay in Touch!</div>
+                      <div id="description-output" class="Story-description u-textBreak u-paddingSidesDouble u-paddingEndsHalf u-hide">
+                        <p class="u-fontSizeXSmall u-textCenter" id="description-target"></p>
+                      </div>
+                      <div class="u-paddingHalf ">
+                          <div class="u-fontSizeXXSmall u-textCenter">
+                            When you sign up for our mailing list, you’ll receive a special offer.
+                          </div>
+
+
+
+                      <form class="Form" style="margin:10px">
+
+                         <div class="Field">
+                            <label for="required-field" class="Field--required">Email</label>
+                            <input type="text" id="required-field"/>
+                         </div>
+
+                      
+                            <div class="Field">
+                            <label for="text-input0">First Name</label>
+                            <input type="text" id="text-input0">
+                          </div>
+                    
+
+                      
+                            <div class="Field">
+                            <label for="text-input0">Last Name</label>
+                            <input type="text" id="text-input0">
+                          </div>
+                      </form>
+
+                      <div class="u-marginTopDouble" style="margin:10px">
+                        <button type="button" class="Button Button--block u-bgTeal u-colorWhite">Sign Up!</button>
+                      </div>
+                      
+                      <div class="u-fontSizeXXSmall u-padding u-textCenter u-muted" style="font-size: 12px;">
+                            By submitting this form, you are consenting to receive marketing emails from: Company Name, 123 Totally Fake Street , Realtown, ZZ, 00000, US. You can revoke your consent to receive emails at any time by using the SafeUnsubscribe® link, found at the bottom of every email. Emails are serviced by Constant Contact.
+                          </div>
+
+
+
+                        <div class="u-fontSizeSmall u-padding u-textCenter" id="company-info">
+                          <div class="u-fontSizeMedium company-name">+ Calavera +</div>
+                          <div class="address_line1">359 North main Street </div>
+                          <div class="address_line2"></div>
+                          <div class="address_line3"></div>
+                          <div class="city-state-postal">Andover, MA 01810 us</div>
+                          <div class="website"></div>
+                          <div class="email">dhartshorn@constantcontact.com</div>
+                        </div>
+                      </div>
+                    </div>
+    <!--              </div>
+     -->              </div>
+                <!-- </div> -->
+
+                        </div>
+                  </div>
+  </div>
+
+  <script>
+    $('.js-dialog').fedDialog({
+      title: 'Sign-up Form Landing Page Editor',
+      type: 'takeover',
+      footer: false,
+      close: function() {
+        window.location = "campaigns_page.html"
+      }
+    });
+    $('.js-dialog').fedDialog('open');
+    $('.js-tab').fedTabs();
+    $('.js-palette-drawer').fedPaletteDrawer();
+	$('.js-menu').fedMenu();
+    $('.js-popover').fedPopover();
+    $('.js-character-count').fedCharacterCount();
+    $('.js-color-picker').fedColorPicker({
+      buttonSwatch: '.ColorSwatchColor'
+    });
+  </script>
+
+
+</body>
+
+</html>

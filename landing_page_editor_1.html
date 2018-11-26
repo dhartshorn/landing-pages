@@ -1,0 +1,809 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no">
+  <title>Sign-up Form Landing Page Editor</title>
+
+  <link rel="stylesheet" href="https://static.ctctcdn.com/lp/fonts/whitney/whitney-current.css">
+  <script src="https://static.ctctcdn.com/h/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://static.ctctcdn.com/h/jquery-ui/1.9.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://static.ctctcdn.com/js/fed-framework/2.0.0_DEV/fed.css">
+  <script src="https://static.ctctcdn.com/js/fed-framework/2.0.0_DEV/fed.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+    }
+	.fed-wrapper .Structure-editor-palette-container {
+	    -webkit-flex: 0 0 400px;
+	    -ms-flex: 0 0 400px;
+	    flex: 0 0 400px;
+	    background: #f6f8fa;
+
+	    overflow-x: hidden;
+	    overflow-y: auto;
+	    -webkit-overflow-scrolling: touch;
+	}
+
+
+    .fed-wrapper .artifact-container {
+      height: 100%;
+      width: 100%;
+/*      background: #FAFAFA;
+*/    }
+    .fed-wrapper .artifact {
+      height: auto;
+      width: 700px;
+    }
+    .fed-wrapper .ColorSwatchButton {
+      width: 30px;
+      height: 30px;
+    }
+
+    .fed-wrapper .Tab {
+    position: relative;
+    z-index: 3;
+    font-size: 0;
+	margin: 0;
+/*	padding: 0 0 0 20px;
+*/    border-bottom: 1px solid #CFD8DC;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+    .Image-preview {
+      min-height: 105px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      cursor: pointer;
+    }
+
+	#coupon-lp-editor .Landing-page {
+	    background-color: #f5f5f5;
+	    margin-left: 300px;
+	    top: 68px;
+	    position: absolute;
+	    bottom: 0;
+	    width: calc(100% - 300px);
+	    overflow-y: scroll;
+	}
+
+    .Well {
+                cursor: pointer;
+                background-color:#fff;
+                transition: all .25s ease-in-out;
+                box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0);
+                
+                
+            }
+            .Well h4 {
+                transition: all .2s ease-in-out;
+                
+                
+            }
+
+            .Well:hover, .Well:focus {
+                background-color:#fff;
+                border-color: var(--newBlue);
+                box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, .2);
+                transform:  translateY(-2px);
+                
+            }
+            .well1:hover, .well1:focus {
+                border-color: var(--newBlue);
+                
+            } 
+            .well4:hover h4,.well4:hover h3 {
+                transition: all .2s ease-in-out;
+                color:var(--newBlue)
+                
+            }
+            .wellBlue:hover {
+                transition: all .2s ease-in-out;
+                background-color: var(--toolkitBlue);
+                
+            }
+
+            .responsive-img {
+            	width: 100%;
+    			height: auto;
+            }
+
+            
+  </style>
+
+</head>
+
+<body>
+  <div class="fed-wrapper">
+    <div class="ctct-ui-wrap">
+      <div class="js-dialog u-hide" data-type="takeover" data-trigger="#dialog_takeover" data-content-padding="false" data-content-flexbox="column">
+        <div class="Structure">
+          <div class="Structure-page">
+            <div class="Structure-page-head u-borderBottom">
+              <div class="HeaderBar">
+              	<div class="HeaderBar-title">
+					<div>
+                       <span id="change-image-button" class="u-link">Back</span>
+                     </div>				  
+                 </div>
+				  <div class="HeaderBar-left">
+				    <div class="Field-wrapper" style="width: 350px;">
+                    <span class="Field-icon Icon--pencil"></span> <input id="text-input-icon" placeholder="Landing page name" type="text">
+                  </div>
+				  </div>
+                <div class="HeaderBar-right">
+                  <a href="javascript:void(0)" type="button" class="Button Button">Save</a>
+                  <a href="publish_success_page_1.html" type="button" class="Button Button">Publish</a>
+                  <a href="javascript:void(0)" type="button" class="Button Button--primary">Done</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="Structure-page-body Structure-page-body--fill">
+              <div class="Structure-editor-container">
+                <div class="Structure-editor-palette-container">
+
+                  <div class="Palette Palette--left js-palette-drawer">
+                    <!-- Palette drawer -->
+                    <div class="Palette-drawer" id="details-drawer">
+                      <div class="Palette-drawer-header">
+                        <div class="Palette-drawer-header-left">
+                          <button class="Button Button--iconRound Button--flat Palette-drawer-close" type="button" aria-label="Close">
+                          <i class="Icon--arrowWest"></i>
+                        </button>
+                        </div>
+                        <h3>Details</h3>
+                      </div>
+                      <div class="Palette-drawer-body">
+                        <div class="u-padding">
+
+
+                          <form class="Form">
+                            <div class="js-character-count u-marginBottom" data-max-count="50">
+                              <label for="character-count-headline" class="Field--required">Headline <span class="Field-metaData"></span></label>
+                              <input type="text" id="character-count-headline" placeholder="Sign up to Stay in Touch!">
+                            </div>
+
+                            <div class="js-character-count u-marginBottom" data-max-count="150">
+                              <label for="character-count-description" class="Field--required">Description<span class="Field-metaData"></span></label>
+                              <textarea type="text" id="character-count-description" placeholder="When you sign up for our mailing list, you’ll receive a special offer."></textarea>
+                            </div>
+                            <div class="js-character-count u-marginBottom" data-max-count="50">
+                              <label for="character-count-buttontext" class="Field--required">Button<span class="Field-metaData"></span></label>
+                              <input type="text" id="character-count-buttontext" placeholder="Sign Up!">
+                            </div>
+							<div class="Field">
+							    <input type="checkbox" class="Field-checkbox" id="checkbox-test1" checked />
+							    <label for="checkbox-test1" class="u-marginRight u-weightSemiBold">Include company information</label>
+							   		<div class="u-paddingLeftDouble"><span>Company Name<br>
+										123 Fake Street<br>
+										Realtown, ZZ USA 00000<br>
+										www.website.com<br>
+										info@website.com</span></div>
+
+							  </div>                          
+							</form>
+
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="Palette-drawer" id="design-drawer">
+                      <div class="Palette-drawer-header">
+                        <div class="Palette-drawer-header-left">
+                          <button class="Button Button--iconRound Button--flat Palette-drawer-close" type="button" aria-label="Close">
+                          <i class="Icon--arrowWest"></i>
+                        </button>
+                        </div>
+                        <h3>Design</h3>
+                      </div>
+                      <div class="Palette-drawer-body">
+                        <div class="u-padding">
+                            <p class="u-weightSemiBold">Logo</p>
+                          <div id="existing-image-picker" class="u-marginBottom">
+                            <div id="image-input" class="Image-preview u-marginBottom u-border u-borderThick u-bgLightestGray u-paddingTopOneAndHalf u-marginBottomFlush" style="background: url(&quot;https://static.ctctcdn.com/galileo/images/templates/Galileo_ImagePlaceholder/IdleMain540x260.png&quot;) center center / cover no-repeat;"></div>
+                            <div>
+                              <span id="change-image-button" class="u-link">Choose Logo</span>
+                              <span id="remove-image-button" class="u-link u-floatRight">Remove</span>
+                            </div>
+                          </div>
+
+                          <div class="u-marginBottomDouble">
+                            <span class="u-valignMiddle">Include background image</span>
+								<div class="Switch u-floatRight">
+								  <input type="checkbox" id="Switch-off" data-alignment="right">
+								  <label for="Switch-off"></label>
+								</div>                          </div>
+                          <div class="u-marginBottomDouble">
+                            <span class="u-valignMiddle">Headline</span>
+                            <button type="button" class="ColorSwatchButton js-color-picker u-floatRight" data-active-color="#37454F" data-alignment="right" data-color-picker-button-swatch></button>
+                          </div>
+                          <div class="u-marginBottomDouble">
+                            <span class="u-valignMiddle">Description</span>
+                            <button type="button" class="ColorSwatchButton js-color-picker u-floatRight" data-active-color="#37454F" data-alignment="right" data-color-picker-button-swatch></button>
+                          </div>
+                          <div class="u-marginBottomDouble">
+                            <span class="u-valignMiddle">Inner background</span>
+                            <button type="button" class="ColorSwatchButton js-color-picker u-floatRight" data-active-color="#FAFAFA" data-alignment="right" data-color-picker-button-swatch></button>
+                          </div>
+                          <div class="u-marginBottomDouble">
+                            <span class="u-valignMiddle">Page background</span>
+                            <button type="button" class="ColorSwatchButton js-color-picker u-floatRight" data-active-color="#FAFAFA" data-alignment="right" data-color-picker-button-swatch></button>
+                          </div>
+                          <div class="u-marginBottomDouble">
+                            <span class="u-valignMiddle">Button text</span>
+                            <button type="button" class="ColorSwatchButton js-color-picker u-floatRight" data-active-color="#FFFFFF" data-alignment="right" data-color-picker-button-swatch></button>
+                          </div>
+                         <div class="u-marginBottomDouble">
+                            <span class="u-valignMiddle">Button background</span>
+                            <button type="button" class="ColorSwatchButton js-color-picker u-floatRight" data-active-color="#47BDC4" data-alignment="right" data-color-picker-button-swatch></button>
+                          </div>                        </div>
+                      </div>
+                    </div>
+
+                    <div class="Palette-drawer" id="contactfields-drawer">
+                      <div class="Palette-drawer-header">
+                        <div class="Palette-drawer-header-left">
+                          <button class="Button Button--iconRound Button--flat Palette-drawer-close" type="button" aria-label="Close">
+                          <i class="Icon--arrowWest"></i>
+                        </button>
+                        </div>
+                        <h3>Contact Fields</h3>
+                      </div>
+                      <div class="Palette-drawer-body">
+                        <div class="u-padding">
+
+
+
+
+						<div class="u-textRight">
+			                <p class="u-marginBottomHalf u-fontSizeXSmall u-weightSemiBold">Required</p>
+			            </div>
+
+
+                        <div class="u-marginBottom">
+							    <input type="checkbox" class="Field-checkbox" id="checkbox-test1" checked disabled>
+							    <label for="checkbox-test1" class="u-marginRight">Email</label>
+                            <div class="Switch u-floatRight">
+                              <input type="checkbox" id="storeLink-switch" checked disabled>
+                              <label for="storeLink-switch"></label>
+                            </div>
+                          </div>
+
+                        <div class="u-marginBottom">
+							    <input type="checkbox" class="Field-checkbox" id="checkbox-test2" >
+							    <label for="checkbox-test2" class="u-marginRight">First Name</label>
+                            <div class="Switch u-floatRight">
+                              <input type="checkbox" id="firstname-switch">
+                              <label for="firstname-switch"></label>
+                            </div>
+                          </div>
+
+                        <div class="u-marginBottom">
+							    <input type="checkbox" class="Field-checkbox" id="checkbox-test3">
+							    <label for="checkbox-test3" class="u-marginRight">Last Name</label>
+                            <div class="Switch u-floatRight">
+                              <input type="checkbox" id="lastname-switch">
+                              <label for="lastname-switch"></label>
+                            </div>
+                          </div>
+
+                        <div class="u-marginBottom">
+							    <input type="checkbox" class="Field-checkbox" id="checkbox-test4">
+							    <label for="checkbox-test4" class="u-marginRight">Phone Number</label>
+                            <div class="Switch u-floatRight">
+                              <input type="checkbox" id="phone-switch">
+                              <label for="phone-switch"></label>
+                            </div>
+                          </div>
+
+
+                        <div class="u-marginBottom">
+							    <input type="checkbox" class="Field-checkbox" id="checkbox-test5">
+							    <label for="checkbox-test5" class="u-marginRight">Street Address</label>
+                            <div class="Switch u-floatRight">
+                              <input type="checkbox" id="streetaddress-switch">
+                              <label for="streetaddress-switch"></label>
+                            </div>
+                          </div>
+
+
+                        <div class="u-marginBottom">
+							    <input type="checkbox" class="Field-checkbox" id="checkbox-test6">
+							    <label for="checkbox-test6" class="u-marginRight">City</label>
+                            <div class="Switch u-floatRight">
+                              <input type="checkbox" id="city-switch">
+                              <label for="city-switch"></label>
+                            </div>
+                          </div>
+
+
+                        <div class="u-marginBottom">
+							    <input type="checkbox" class="Field-checkbox" id="checkbox-test7" >
+							    <label for="checkbox-test7" class="u-marginRight">State/Province</label>
+                            <div class="Switch u-floatRight">
+                              <input type="checkbox" id="stateprovince-switch">
+                              <label for="stateprovince-switch"></label>
+                            </div>
+                          </div>
+
+                        <div class="u-marginBottom">
+							    <input type="checkbox" class="Field-checkbox" id="checkbox-test8" >
+							    <label for="checkbox-test8" class="u-marginRight">Country</label>
+                            <div class="Switch u-floatRight">
+                              <input type="checkbox" id="country-switch">
+                              <label for="country-switch"></label>
+                            </div>
+                          </div>
+
+                        <div class="u-marginBottom">
+							    <input type="checkbox" class="Field-checkbox" id="checkbox-test9">
+							    <label for="checkbox-test9" class="u-marginRight">Postal Code</label>
+                            <div class="Switch u-floatRight">
+                              <input type="checkbox" id="postal-switch">
+                              <label for="postal-switch"></label>
+                            </div>
+                          </div>
+
+                        <div class="u-marginBottom">
+							    <input type="checkbox" class="Field-checkbox" id="checkbox-test10">
+							    <label for="checkbox-test10" class="u-marginRight">Company</label>
+                            <div class="Switch u-floatRight">
+                              <input type="checkbox" id="company-switch">
+                              <label for="company-switch"></label>
+                            </div>
+                          </div>
+
+
+                        <div class="u-marginBottom">
+							    <input type="checkbox" class="Field-checkbox" id="checkbox-test11">
+							    <label for="checkbox-test11" class="u-marginRight">Job Title</label>
+                            <div class="Switch u-floatRight">
+                              <input type="checkbox" id="jobtitle-switch">
+                              <label for="jobtitle-switch"></label>
+                            </div>
+                          </div>
+
+
+                        <div class="u-marginBottom">
+							    <input type="checkbox" class="Field-checkbox" id="checkbox-test12">
+							    <label for="checkbox-test12" class="u-marginRight">Birthday</label>
+                            <div class="Switch u-floatRight">
+                              <input type="checkbox" id="birthday-switch">
+                              <label for="birthday-switch"></label>
+                            </div>
+                          </div>
+
+
+                        <div class="u-marginBottom">
+							    <input type="checkbox" class="Field-checkbox" id="checkbox-test13" >
+							    <label for="checkbox-test13" class="u-marginRight">Anniversary</label>
+                            <div class="Switch u-floatRight">
+                              <input type="checkbox" id="anniversary-switch">
+                              <label for="anniversary-switch"></label>
+                            </div>
+                          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                      </div>
+                    </div> 
+
+                    <div class="Palette-drawer" id="pagelayout-drawer">
+                      <div class="Palette-drawer-header">
+                        <div class="Palette-drawer-header-left">
+                          <button class="Button Button--iconRound Button--flat Palette-drawer-close" type="button" aria-label="Close">
+                          <i class="Icon--arrowWest"></i>
+                        </button>
+                        </div>
+                        <h3>Page Layout</h3>
+                      </div>
+                      <div class="Palette-drawer-body">
+                        <div class="u-padding">
+
+			            <div class="Layout">
+
+			              <div class="Layout-col-6 u-marginBottomHalf">
+			                <div class="Well Well--thin u-textCenter">
+			                  <div>
+			                    <img src="img/popup-center.svg" alt="Girl in a jacket" class="responsive-img">
+			                  </div>
+			                </div>
+			              </div>
+
+			              <div class="Layout-col-6 u-marginBottomHalf">
+			                <div class="Well Well--thin u-textCenter">
+			                  <div>
+			                    <img src="img/popup-left.svg" alt="Girl in a jacket" class="responsive-img">
+			                  </div>
+			                </div>
+			              </div>
+
+			              <div class="Layout-col-6 u-marginBottomHalf">
+			                <div class="Well Well--thin u-textCenter">
+			                  <div>
+			                    <img src="img/popup-two-column.svg" alt="Girl in a jacket" class="responsive-img">
+			                  </div>
+			                </div>
+			              </div>
+
+
+			            </div>
+
+
+	
+
+
+
+                        </div>
+                      </div>
+                    </div> 
+
+
+                    <div class="Palette-drawer" id="thankyou-drawer">
+                      <div class="Palette-drawer-header">
+                        <div class="Palette-drawer-header-left">
+                          <button class="Button Button--iconRound Button--flat Palette-drawer-close" type="button" aria-label="Close">
+                          <i class="Icon--arrowWest"></i>
+                        </button>
+                        </div>
+                        <h3>Thank-You Page</h3>
+                      </div>
+                      <div class="Palette-drawer-body">
+                       
+                       <div class="u-padding">
+
+
+                          <form class="Form">
+                            <div class="js-character-count u-marginBottom" data-max-count="50">
+                              <label for="character-count-headline" class="Field--required">Headline <span class="Field-metaData"></span></label>
+                              <input type="text" id="character-count-headline" placeholder="Thanks for Signing up!">
+                            </div>
+
+                            <div class="js-character-count u-marginBottom" data-max-count="150">
+                              <label for="character-count-description" class="Field--required">Description<span class="Field-metaData"></span></label>
+                              <textarea type="text" id="character-count-description" placeholder="We’re glad we can keep in touch! To show our appreciation, we’re offering you a free gift."></textarea>
+                            </div>
+
+
+							  <div class="Field" style="margin-bottom: 4px;">
+							    <input type="checkbox" class="Field-checkbox yuppers" id="checkbox-download" checked>
+							    <label for="checkbox-download" class="u-marginRightFlush">Display Download/ Redirect Link
+</label>
+							    <a href="javascript:void(0)" type="button" class="Button--link js-popover" data-content="Once customers sign up, you can thank them by giving them a link to download a special file or access an exclusive gift." data-qe-id="Popover-ID3"><i class="Icon--infoCircle u-colorDarkerGray u-fontSizeRegular"></i></a>
+							   
+							  </div>
+
+
+								<div class="Field"><input type="text" id="text-input" class="puppers" placeholder="http://www.gumroad.com/octanerenderfree.html"></div>
+									<script>
+										var input = $('.puppers');
+										$('.yuppers').on('click', function(){
+											if ($(this).is(':checked')) {
+												input.removeAttr('disabled', '');
+											} else {
+												input.attr('disabled', 'disabled');
+											}
+										});
+
+									</script>
+
+                            <div class="js-character-count u-marginBottom" data-max-count="50">
+                              <label for="character-count-buttontext" class="Field--required">Button<span class="Field-metaData"></span></label>
+                              <input type="text" id="character-count-buttontext" placeholder="Download Now!">
+                            </div>
+
+
+
+
+
+							</form>
+
+
+                        </div>
+
+
+
+
+                      </div>
+                    </div>
+
+                    <div class="Palette-drawer" id="listsandsettings-drawer">
+                      <div class="Palette-drawer-header">
+                        <div class="Palette-drawer-header-left">
+                          <button class="Button Button--iconRound Button--flat Palette-drawer-close" type="button" aria-label="Close">
+                          <i class="Icon--arrowWest"></i>
+                        </button>
+                        </div>
+                        <h3>Lists and URL Settings</h3>
+                      </div>
+                      <div class="Palette-drawer-body">
+                        <div class="u-padding">
+                          <form class="Form">
+                            <div class="Field">
+                              <label for="replyemail">Choose a list where contacts will be saved </label>
+                               <div class="Field-description ">Choose which list you’ll save contacts to if they provide their email address upon sign-up.</div>
+
+                              <button type="button" class="Button Button--dropdown js-menu" style="width:100%;">Choose list</button>
+                              <div>
+                              <span id="change-image-button" class="u-link">Create a new list</span>
+                            </div>
+									<script>
+									$('.js-menu').fedMenu({
+									  items: [
+									    { text: 'myemail@yahoo.com', value: 'myemail@yahoo.com' },
+									    { text: 'dorsias@gmail.com', value: 'dorsias@gmail.com' },
+									    { text: 'jardenpdchief@gmail.com', value: 'jardenpdchief@gmail.com' },
+									    { text: 'maangchi@gmail.com', value: 'maangchi@gmail.com' },
+									    { text: 'herakut@gmail.com', value: 'herakut@gmail.com' }
+									  ]
+									});
+									</script>
+                            </div>
+
+
+							  <div class="Field" style="margin-bottom: 4px;">
+							    <input type="checkbox" class="Field-checkbox yuppers" id="checkbox-download2" checked>
+							    <label for="checkbox-download2" class="u-marginRightFlush">Customize URL</label>
+							    <a href="javascript:void(0)" type="button" class="Button--link js-popover" data-content="With a customized URL, you can create a unique link to your landing page. Otherwise, we’ll give you a randomly generated URL." data-qe-id="Popover-ID3"><i class="Icon--infoCircle u-colorDarkerGray u-fontSizeRegular"></i></a>
+							   
+							  </div>
+
+
+<!-- 								<div class="Field" style="margin-bottom: 4px;">
+							    <input type="checkbox" class="Field-checkbox yuppers" id="checkbox-download" checked>
+							    <label for="checkbox-download" class="u-marginRightFlush">Customize URL</label>
+							    <a href="javascript:void(0)" type="button" class="Button--link js-popover" data-content="With a customized URL, you can create a unique link to your landing page. Otherwise, we’ll give you a randomly generated URL." data-qe-id="Popover-ID3"><i class="Icon--infoCircle u-colorDarkerGray u-fontSizeRegular"></i></a>
+							  	</div> -->
+
+									<div class="Field">
+										<div class="Layout u-paddingBottom">
+										    <div class="Layout-col-4 u-paddingRightFlush">
+										      <label for="text-input">http://conta.cc</label>
+										    </div>
+										    <div class="Layout-col-8 u-paddingLeftFlush">
+										      <input type="text" id="text-input" class="puppers" placeholder="//example URL suffix TBD//"/>
+										    </div>
+										</div>
+									</div>
+								
+									<script>
+										var input = $('.puppers');
+										$('.yuppers').on('click', function(){
+											if ($(this).is(':checked')) {
+												input.removeAttr('disabled', '');
+											} else {
+												input.attr('disabled', 'disabled');
+											}
+										});
+
+									</script>
+
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <!-- Palette-header -->
+                    <div class="Palette-header Tab Tab--block js-tab">
+                      <a href="#content-palette" title="Content Palette" data-tab-id="content-palette" data-tab-name="content" data-toggle="tab" class="">Content</a>
+                    </div>
+
+                    <!-- Palette views -->
+                    <div class="Palette-views TabContent">
+                      <div id="content-palette" class="Palette-view">
+                        <div class="Palette-view-body u-padding u-paddingFlush">
+                          <ul class="Palette-menu">
+                            <li class="Palette-drawerTrigger" data-palette-drawer="details-drawer">Details<span class="u-floatRight"><i class="Icon--chevronEast"></i></span></li>
+							<li class="Palette-drawerTrigger" data-palette-drawer="design-drawer">Design<span class="u-floatRight"><i class="Icon--chevronEast"></i></span></li>
+                            <li class="Palette-drawerTrigger" data-palette-drawer="contactfields-drawer">Contact Fields<span class="u-floatRight"><i class="Icon--chevronEast"></i></span></li>
+                            <li class="Palette-drawerTrigger" data-palette-drawer="pagelayout-drawer">Page Layout<span class="u-floatRight"><i class="Icon--chevronEast"></i></span></li>
+                            <li class="Palette-drawerTrigger" data-palette-drawer="thankyou-drawer">Thank-You Page<span class="u-floatRight"><i class="Icon--chevronEast"></i></span></li>
+                            <li class="Palette-drawerTrigger" data-palette-drawer="listsandsettings-drawer">Lists and URL Settings<span class="u-floatRight"><i class="Icon--chevronEast"></i></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+
+
+                </div>
+                <div class="Structure-editor-preview-container">
+
+                	<div class="Tab js-tabs u-paddingLeft" data-qe-id="Tab-ID" style="background-color: #ffffff;">
+					  <a href="#tab-1" data-qe-id="Tab-ID-OPTION1">Sign-Up Page</a>
+					  <a href="#tab-2" data-qe-id="Tab-ID-OPTION2">Thank-You Page</a>
+					</div>
+					<div class="TabContent">
+					  <div id="tab-1">
+					    <div class="artifact-container">
+
+
+
+		                    <div class="artifact">
+		                    	
+
+		                    	<!-- <div id="live-preview-region"> -->
+		                    		<div>
+		<!--                     			<div class="Landing-page u-padding" id="page-background-target">
+		 -->							  <div class="Story-frame u-centerBlock u-padding" id="inner-background-target" style="background-color: rgb(255, 255, 255);">
+									    <div class="u-textCenter u-marginBottom">
+									      <img src="https://static.ctctcdn.com/galileo/images/templates/Galileo_ImagePlaceholder/IdleMain540x260.png" style="max-height: 150px; max-width: 600px" class="u-marginTop" id="image-target">
+									      
+									    </div>
+									    <div class="u-fontSizeKilo u-weightSemiBold u-textCenter u-textBreak" id="headline-target" style="color: rgb(0, 0, 0);">Sign up to Stay in Touch!</div>
+									    <div id="description-output" class="Story-description u-textBreak u-paddingSidesDouble u-paddingEndsHalf u-hide">
+									      <p class="u-fontSizeXSmall u-textCenter" id="description-target"></p>
+									    </div>
+									    <div class="u-paddingHalf ">
+									        <div class="u-fontSizeXXSmall u-textCenter">
+									          When you sign up for our mailing list, you’ll receive a special offer.
+									        </div>
+
+
+
+											<form class="Form" style="margin:10px">
+
+												 <div class="Field">
+												    <label for="required-field" class="Field--required">Email</label>
+												    <input type="text" id="required-field"/>
+												 </div>
+
+											
+											      <div class="Field">
+												    <label for="text-input0">First Name</label>
+												    <input type="text" id="text-input0">
+												  </div>
+										
+
+											
+											      <div class="Field">
+												    <label for="text-input0">Last Name</label>
+												    <input type="text" id="text-input0">
+												  </div>
+											</form>
+
+											<div class="u-marginTopDouble" style="margin:10px">
+												<button type="button" class="Button Button--block u-bgTeal u-colorWhite">Sign Up!</button>
+											</div>
+											
+											<div class="u-fontSizeXXSmall u-padding u-textCenter u-muted" style="font-size: 12px;">
+									          By submitting this form, you are consenting to receive marketing emails from: Company Name, 123 Totally Fake Street , Realtown, ZZ, 00000, US. You can revoke your consent to receive emails at any time by using the SafeUnsubscribe® link, found at the bottom of every email. Emails are serviced by Constant Contact.
+									        </div>
+
+
+
+									      <div class="u-fontSizeSmall u-padding u-textCenter" id="company-info">
+									        <div class="u-fontSizeMedium company-name">+ Calavera +</div>
+									        <div class="address_line1">359 North main Street </div>
+									        <div class="address_line2"></div>
+									        <div class="address_line3"></div>
+									        <div class="city-state-postal">Andover, MA 01810 us</div>
+									        <div class="website"></div>
+									        <div class="email">dhartshorn@constantcontact.com</div>
+									      </div>
+									    </div>
+									  </div>
+		<!-- 							</div>
+		 -->							</div>
+								<!-- </div> -->
+
+		                    </div>
+                  </div>
+					  </div>
+					<div id="tab-2">
+					    <div class="artifact-container">
+
+
+
+		                    <div class="artifact">
+		                    	
+
+		                    	<!-- <div id="live-preview-region"> -->
+		                    		<div>
+		<!--                     			<div class="Landing-page u-padding" id="page-background-target">
+		 -->							  <div class="Story-frame u-centerBlock u-padding" id="inner-background-target" style="background-color: rgb(255, 255, 255);">
+									    <div class="u-textCenter u-marginBottom">
+									      <img src="https://static.ctctcdn.com/galileo/images/templates/Galileo_ImagePlaceholder/IdleMain540x260.png" style="max-height: 150px; max-width: 600px" class="u-marginTop" id="image-target">
+									      
+									    </div>
+									    <div class="u-fontSizeKilo u-weightSemiBold u-textCenter u-textBreak" id="headline-target" style="color: rgb(0, 0, 0);">Thanks for Signing up!</div>
+									    <div id="description-output" class="Story-description u-textBreak u-paddingSidesDouble u-paddingEndsHalf u-hide">
+									      <p class="u-fontSizeXSmall u-textCenter" id="description-target"></p>
+									    </div>
+									    <div class="u-paddingHalf ">
+									        <div class="u-fontSizeXXSmall u-textCenter">
+									          We’re glad we can keep in touch! To show our appreciation, we’re offering you a free gift.
+									        </div>
+
+
+
+											
+
+											<div class="u-marginTopDouble" style="margin:10px">
+												<button type="button" class="Button Button--block u-bgTeal u-colorWhite">Download Now</button>
+											</div>
+											
+											<div class="u-fontSizeXXSmall u-padding u-textCenter u-muted" style="font-size: 12px;">
+									          By submitting this form, you are consenting to receive marketing emails from: Company Name, 123 Totally Fake Street , Realtown, ZZ, 00000, US. You can revoke your consent to receive emails at any time by using the SafeUnsubscribe® link, found at the bottom of every email. Emails are serviced by Constant Contact.
+									        </div>
+
+
+
+									      <div class="u-fontSizeSmall u-padding u-textCenter" id="company-info">
+									        <div class="u-fontSizeMedium company-name">+ Calavera +</div>
+									        <div class="address_line1">359 North main Street </div>
+									        <div class="address_line2"></div>
+									        <div class="address_line3"></div>
+									        <div class="city-state-postal">Andover, MA 01810 us</div>
+									        <div class="website"></div>
+									        <div class="email">dhartshorn@constantcontact.com</div>
+									      </div>
+									    </div>
+									  </div>
+		<!-- 							</div>
+		 -->							</div>
+								<!-- </div> -->
+
+		                    </div>
+                  		</div>
+					  </div>
+					</div>
+
+					<script>
+					$('.js-tabs').fedTabs();
+					</script>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+  </div>
+
+  <script>
+    $('.js-dialog').fedDialog({
+      title: 'Sign-up Form Landing Page Editor',
+      type: 'takeover',
+      footer: false,
+      close: function() {
+        window.location = "campaigns_page.html"
+      }
+    });
+    $('.js-dialog').fedDialog('open');
+    $('.js-tab').fedTabs();
+    $('.js-palette-drawer').fedPaletteDrawer();
+	$('.js-menu').fedMenu();
+    $('.js-popover').fedPopover();
+    $('.js-character-count').fedCharacterCount();
+    $('.js-color-picker').fedColorPicker({
+      buttonSwatch: '.ColorSwatchColor'
+    });
+  </script>
+
+
+</body>
+
+</html>

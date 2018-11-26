@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- (1) Whitney Font -->
+  <link href="https://static.ctctcdn.com/lp/fonts/whitney/whitney-current.css" rel="stylesheet">
+
+  <!-- (2) FED CSS -->
+  <link href="https://static.ctctcdn.com/lp/fonts/whitney/whitney-current.css" rel="stylesheet">
+  <link href="https://static.ctctcdn.com/h/fed-framework/2.0.0-73/fed.min.css" rel="stylesheet">
+  <link href="extra2.css" rel="stylesheet" type="text/css"><!-- (4) jQuery -->
+
+
+  <script src="https://static.ctctcdn.com/h/jquery/2.1.4/jquery.min.js">
+  </script><!-- (5) FED JavaScript -->
+
+<!-- SCRIPTS -->
+
+  <script src="https://static.ctctcdn.com/h/moment/2.11.2/moment.min.js">
+  </script>
+  <script src="https://static.ctctcdn.com/h/fed-framework/2.0.0-72/fed.min.js">
+  </script>
+  <script src="https://static.ctctcdn.com/h/fed-framework/2.0.0-72/fed-folders.min.js">
+  </script>
+  <script src="https://static.ctctcdn.com/h/fed-framework/2.0.0-72/fed-typeahead.min.js">
+  </script>
+  <script src="public/prettify.js">
+  </script>
+  <script src="js/clipboard.min.js">
+  </script>
+  <script src="js/copyCode.js">
+  </script>
+  <script src="js/createCodepen.js">
+  </script>
+  <script src="js/lunr.min.js">
+  </script>
+  <script src="js/lunrSearch.js">
+  </script>
+  <script src="js/navigation.js">
+  </script>
+  <script src="js/folder-controller.js">
+  </script>
+  <script src="js/colorPicker-controller.js">
+  </script>
+  <script src="https://code.highcharts.com/highcharts.js">
+  </script>
+  <script src="https://code.highcharts.com/modules/exporting.js">
+  </script>
+  <meta charset="utf-8">
+  <title>Your Landing Page Has Been Published!</title>
+  <style>
+/*    .callouts-flex-custom {
+      align-items: stretch !important;
+    }
+    .callouts-flex-custom-child {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }*/
+
+    
+            
+
+            .Well {
+                cursor: pointer;
+                background-color:#fff;
+                transition: all .25s ease-in-out;
+                box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0);
+                
+                
+            }
+            .Well h4 {
+                transition: all .2s ease-in-out;
+                
+                
+            }
+
+            .Well:hover, .Well:focus {
+                background-color:#fff;
+                border-color: var(--newBlue);
+                box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, .2);
+                transform:  translateY(-2px);
+                
+            }
+            .well1:hover, .well1:focus {
+                border-color: var(--newBlue);
+                
+            } 
+            .well4:hover h4,.well4:hover h3 {
+                transition: all .2s ease-in-out;
+                color:var(--newBlue)
+                
+            }
+            .wellBlue:hover {
+                transition: all .2s ease-in-out;
+                background-color: var(--toolkitBlue);
+                
+            }
+  </style>
+</head>
+<body>
+  <!-- (3) FED Wrapper -->
+  <div class="fed-wrapper">
+    <!-- FAKE NAV -->
+    <div id="fakeNav">
+      <ul>
+        <li class="logoNav">Home</li>
+        <li>Campaigns</li>
+        <li>Contacts</li>
+        <li>Trends</li>
+        <li>Sign-up Forms</li>
+        <li>Library</li>
+        <li>Social Posts</li>
+        <li>Integrations</li>
+      </ul>
+    </div>
+    <div class="innerWrapper u-centerBlock u-paddingSidesDouble u-paddingEnds">
+      <div class="u-size12of12">
+        <div class="innerWrapper u-centerBlock u-paddingSidesDouble u-paddingEnds">
+
+                <div class="u-verticalCenter-element u-size12of12 u-textCenter ">
+                  <div class="u-marginTopDouble">
+                    <img class="publish-icon" src="img/landing_publish_success_icon.svg">
+                  </div>
+                        <div class="u-fontSizeXXLarge u-weightSemiBold u-marginBottomHalf u-centerBlock u-marginTopHalf">Your Landing Page Has Been Published!</div>
+                        <div class="u-fontSizeLarge u-centerBlock u-marginTop u-marginBottom">URL: <a href="landing_page_preview.html" target="_blank" >http://conta.cc/1QRwhDi</a></div>
+
+                        <div class="u-fontSizeMedium u-centerBlock" >Congrats on creating and publishing your landing page! Now, we recommend driving customers to your page by sharing it on social media or through an email campaign.</div>
+                        <div class="u-fontSizeLarge u-centerBlock u-marginTop u-weightSemiBold">Share your page:</div>
+                        <div class="u-marginBottomHalf u-centerBlock">
+                          <a href="https://www.facebook.com/" target="_blank" type="button" class="Button Button--flat Button--icon"><i class="Icon--facebook facebookicon u-fontSizeXLarge"></i></a>
+                          <a href="https://twitter.com" target="_blank" type="button" class="Button Button--flat Button--icon"><i class="Icon--twitter twittericon u-fontSizeXLarge"></i></a>
+                          <a href="https://www.linkedin.com/" target="_blank" type="button" class="Button Button--flat Button--icon"><i class="Icon--linkedin linkedinicon u-fontSizeXLarge"></i></a>
+<!--                           <a href="https://www.pinterest.com/" target="_blank" type="button" class="Button Button--flat Button--icon"><i class="Icon--pinterest pinteresticon u-fontSizeXLarge"></i></a>
+                          <a href="https://plus.google.com/discover" target="_blank" type="button" class="Button Button--flat Button--icon"><i class="Icon--googlePlus googleplusicon u-fontSizeXLarge"></i></a> -->
+<!--                           
+                          <button class="Button Button--flat Button--icon" type="button"><i class="Icon--facebook facebookicon u-fontSizeXLarge"></i></button>
+                          <button class="Button Button--flat Button--icon" type="button"><i class="Icon--twitter twittericon u-fontSizeXLarge"></i></button>
+                          <button class="Button Button--flat Button--icon" type="button"><i class="Icon--linkedin linkedinicon u-fontSizeXLarge"></i></button>
+                          <button class="Button Button--flat Button--icon" type="button"><i class="Icon--pinterest pinteresticon u-fontSizeXLarge"></i></button>
+                          <button class="Button Button--flat Button--icon" type="button"><i class="Icon--googlePlus googleplusicon u-fontSizeXLarge"></i></button> -->
+                        </div>
+
+              </div>
+
+
+
+
+
+
+
+            <div class="Layout-col-12 u-centerBlock">
+    
+             <div class="Layout Layout--alignTop u-marginBottomDouble u-marginTop">
+
+              <div class="Layout-col-12 b2-Layout-col-6 u-marginBottomHalf">
+    		        <div class="Well Well--thin well1">
+    		          <div class="Layout Layout--gutterless Layout--alignTop">
+    		            <div class="Layout-col u-marginRight">
+    		              <h4 class="u-weightSemiBold u-marginBottomHalf">Create a Facebook Lead Ad</h4>
+    		              <p class="u-marginBottomFlush u-colorDarkGray u-fontSizeSmall">Find new customers to send to your sign-up page.</p>
+    		            </div>
+    		 			      <div class="Layout-col-fixed "><i class="Icon--facebook facebookicon u-fontSizeMega u-paddingTopFlush"></i></div>
+    		          </div>
+    		        </div>
+		          </div>
+
+              <div class="Layout-col-12 b2-Layout-col-6 u-marginBottomHalf">
+                <div class="Well Well--thin well1" >
+                  <div class="Layout Layout--gutterless Layout--alignTop">
+                    <div class="Layout-col u-marginRight">
+                      <h4 class="u-weightSemiBold u-marginBottomHalf">Setup a Welcome Email</h4>
+                      <p class="u-marginBottomFlush u-colorDarkGray u-fontSizeSmall">Get more info on your customers by linking to your sign-up page.</p>
+                    </div>
+                    <div class="Layout-col-fixed "><i class="Icon--phone u-colorGray u-fontSizeMega u-paddingTopFlush"></i></div>
+                  </div>
+                </div>
+              </div>
+
+		        </div>
+            </div>
+
+
+
+
+
+
+            
+
+                  
+
+
+
+
+      </div>
+
+    </div>
+  </div><!-- Initialize FED JS Component -->
+  <script>
+     //needed for when elements are cloned, events arent copied
+
+
+                 					
+     function resetFED() {
+
+       $('.js-date-picker').fedDatePicker();
+       $('.js-date-range-picker').fedDateRangePicker();
+       $('.js-tooltip').fedTooltip();
+       $('.js-tab').fedTab();
+       $('.js-dialog').fedDialog({
+   title: 'Compare Campaigns',
+   clickPrimaryAction: function(e, data){
+     $(this).fedDialog('close');
+   }
+  });
+       $('Table input[type="checkbox"]').on('change', function(e) {
+   var $table = $(this).parents('Table'),
+       $headerBarNormal = $(this).parents('Table').prev('.HeaderBar'),
+       $headerBarBeforeScroller = $(this).parents('.Table-scroller').prev('.HeaderBar'),
+       $headerBar = $headerBarNormal.length ? $headerBarNormal : $headerBarBeforeScroller,
+       checkedItemsCount = $table.find('input[type="checkbox"]:checked').length;
+       $headerBar.toggleClass('is-open', (checkedItemsCount>0));
+   $headerBar.find('.HeaderBar-title-count').text(checkedItemsCount);
+  });
+
+
+
+
+
+Highcharts.setOptions({
+  lang: {
+    resetZoom: 'Reset Zoom'
+  }
+});
+
+$('#change-zoom-title').bind('click', function() {
+  chart.zoomOut();
+
+  Highcharts.setOptions({
+    lang: {
+      resetZoom: 'Reset Zoom'
+    }
+  });
+});
+
+
+  Highcharts.chart('email-container', {
+     chart: {
+        type: 'line',
+        zoomType: 'x',
+        panning: true,
+        panKey: 'shift',
+        resetZoomButton: {
+            theme: {
+                fill: '#FFFFFF',
+                stroke: '#78909c',
+                r: 2,
+                height: 14,
+                margin: 0,
+                padding: 11,
+          
+                style: {
+                    fontSize: '15px',
+                    fontFamily: 'Roboto,Helvetica Neue,Arial,sans-serif',
+                    textalign: 'center',
+                    verticalalign: 'middle',
+
+                },
+
+              
+                states: {
+                    hover: {
+                        fill: '#eceff1',
+                        fillOpacity: 0.1,
+                        stroke: '#546e7a',
+
+                        style: {
+                            color: '#4f595d'
+                        }
+                    }
+                }
+            }
+        }
+
+     },
+     title: {
+         text: null
+     },
+     subtitle: {
+        text: 'Highlight any section of the graph to zoom in. Hold shift to pan.',
+        align: 'center',
+        y: 20
+    },
+     exporting: { 
+         enabled: false
+   },
+     credits: {
+       enabled: false
+   },
+     xAxis: {
+         categories: ["Jan '18", "Feb '18", "Mar '18", "Apr '18", "May '18", "Jun '18", "Jul '18", "Aug '18", "Sep '18", "Oct '18", "Nov '18", "Dec '18"],
+         tickmarkPlacement: 'on',
+
+         title: {
+             enabled: false
+         }
+     },
+     yAxis: {
+
+     	 min: 0,
+         max: 100,
+
+         title: {
+             text: 'Percent' 
+         },
+         
+     },
+     tooltip: {
+
+         split: true,
+         valueSuffix: '%'
+     },
+     plotOptions: {
+
+         area: {
+             stacking: 'normal',
+             lineColor: '#666666',
+             lineWidth: 1,
+             marker: {
+                 lineWidth: 1,
+                 lineColor: '#666666'
+             }
+         }
+     },
+     series: [{
+         name: 'Total open rate',
+	     marker: {
+	            symbol: 'circle'
+	        },
+         data: [35, 45, 48, 50, 57, 55, 60, 65, 70, 72, 80, 94]
+     }, {
+         name: 'Mobile open rate',
+         	     marker: {
+	            symbol: 'circle'
+	        },
+         data: [22, 32, 40, 36, 40, 48, 44, 50, 55, 53, 60, 72]
+     }, {
+         name: 'Click rate',
+         	     marker: {
+	            symbol: 'circle'
+	        },
+         data: [12, 14, 10, 22, 19, 24, 28, 32, 30, 38, 41, 55]
+     }, {
+         name: 'Avg. industry open rate',
+         	     marker: {
+	            enabled: false,
+	        },
+         data: [14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14],
+         dashStyle: 'shortdot'
+     }, {
+         name: 'Avg. industry click rate',
+         	     marker: {
+	            enabled: false,
+	        },
+         data: [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9],
+         dashStyle: 'shortdot'
+     }]
+  });
+
+  Highcharts.chart('contacts-container', {
+     chart: {
+        type: 'line',
+        zoomType: 'x',
+        panning: true,
+        panKey: 'shift',
+        resetZoomButton: {
+            theme: {
+                fill: '#FFFFFF',
+                stroke: '#78909c',
+                r: 2,
+                height: 14,
+                margin: 0,
+                padding: 11,
+          
+                style: {
+                    fontSize: '15px',
+                    fontFamily: 'Roboto,Helvetica Neue,Arial,sans-serif',
+                    textalign: 'center',
+                    verticalalign: 'middle',
+
+                },
+
+              
+                states: {
+                    hover: {
+                        fill: '#eceff1',
+                        fillOpacity: 0.1,
+                        stroke: '#546e7a',
+
+                        style: {
+                            color: '#4f595d'
+                        }
+                    }
+                }
+            }
+        }
+
+     },
+     title: {
+         text: null
+     },
+       subtitle: {
+        text: 'Highlight any section of the graph to zoom in. Hold shift to pan.',
+        align: 'center',
+        y: 20
+    },
+     exporting: { 
+         enabled: false
+               },  
+     credits: {
+       enabled: false
+   },
+     xAxis: {
+         categories: ["Jan '18", "Feb '18", "Mar '18", "Apr '18", "May '18", "Jun '18", "Jul '18", "Aug '18", "Sep '18", "Oct '18", "Nov '18", "Dec '18"],
+         tickmarkPlacement: 'on',
+         title: {
+             enabled: false
+         }
+     },
+     yAxis: {
+     	 min: 0,
+         max: 100,
+
+
+         title: {
+             text: 'Number of Contacts'
+         },
+         
+     },
+     tooltip: {
+         split: true,
+         valueSuffix: false,
+     },
+     plotOptions: {
+
+         area: {
+             stacking: 'normal',
+             lineColor: '#666666',
+             lineWidth: 1,
+             marker: {
+                 lineWidth: 1,
+                 lineColor: '#666666'
+             }
+         }
+     },
+     series: [{
+         name: 'Contacts',
+         data: [12, 45, 48, 44, 57, 55, 70, 65, 70, 96, 78, 70],
+         color: '#FEA802',
+         marker: {
+            symbol: 'circle'
+        }
+
+     }]
+  });
+
+
+Highcharts.chart('compare-container', {
+    chart: {
+        type: 'column'
+    },
+     title: {
+         text: null
+     },
+     exporting: { 
+         enabled: false
+   },
+     credits: {
+       enabled: false
+   },
+
+    xAxis: {
+        categories: [
+            'Open Rate',
+            'Click-Through Rate',
+            'Bounce Rate',
+            'Unsub Rate'
+            
+        ],
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        max: 100,
+        title: {
+            text: null
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    series: [{
+        name: 'Test Email',
+        data: [49.9, 71.5, 106.4, 129.2]
+
+    }, {
+        name: 'Summer BBQ Blowout!',
+        data: [83.6, 78.8, 98.5, 93.4]
+
+    }, {
+        name: 'Newsletter Volume 5',
+        data: [48.9, 38.8, 39.3, 41.4]
+
+
+    }]
+});
+
+  $(function() {
+         // Create the chart
+         chart = new Highcharts.Chart({
+             chart: {
+                 renderTo: 'piecontainer',
+                 type: 'pie'
+             },
+             title: {
+                 text: null
+             },
+             exporting: { 
+                 enabled: false
+               },
+             credits: {
+                 enabled: false
+             },
+             legend: {
+               itemStyle: {
+                  fontSize:'10px',
+                  font: '10pt Roboto, sans-serif',
+                  color: '#394856'
+               },
+               layout: 'vertical',
+               align: 'right',
+               verticalAlign: 'middle',
+               floating: true,
+               backgroundColor: '#FFFFFF'
+              },
+
+             yAxis: {
+                 title: {
+                     text: 'Contact growth'
+                 }
+             },
+             plotOptions: {
+                 pie: {
+                     shadow: false
+                 }
+             },
+             tooltip: {
+                 formatter: function() {
+                     return '<b>'+ this.point.name +'<\/b>: '+ this.y +' %';
+                 }
+             },
+             series: [{
+                 name: 'Contacts Added',
+                 data: [["Added by you",24],["Facebook",18],["Shopify",6],["Eventbrite",4],["Other sources",20]],
+                 size: '70%',
+                 innerSize: '70%',
+                 showInLegend:true,
+                 dataLabels: {
+                     enabled: false
+                 }
+             }]
+         });
+     });
+
+     }
+     resetFED()
+  </script>
+</body>
+</html>

@@ -1,0 +1,441 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no">
+  <title>Constant Contact Integrations</title>
+
+  <link rel="stylesheet" href="https://static.ctctcdn.com/lp/fonts/whitney/whitney-current.css">
+  <link rel="stylesheet" href="https://static.ctctcdn.com/h/fed-framework/1.4.1/fed.min.css">
+  <script src="https://static.ctctcdn.com/h/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://static.ctctcdn.com/h/jquery-ui/1.9.1/jquery-ui.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+    }
+    .ctct-ui-wrap {
+      margin: auto;
+      max-width: 1280px;
+      padding: 24px;
+    }
+    
+    #chrome {
+      background: #39485D;
+      margin: auto;
+      text-align: center;
+      height: 47px;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <div id="chrome">
+    <img src="img/sitechrome_left.png">
+    <a href="integrations.html"><img src="img/sitechrome_tabselected.png"></a>
+    <img src="img/sitechrome_right.png">
+  </div>
+  
+  <div class="fed-wrapper ctct-ui-wrap">
+    <h1 class="u-weightSemiBold u-paddingBottomFlush u-fontSizeXXlarge">Integrations</h1>
+
+    <div id="integrations-tab">
+      <div class="CardSet">
+        <!--facebook lwi disconnected -->
+        <div class="Card u-marginLeftFlush u-marginRight lwi" data-qe-id="FacebookLwi-Card">
+          <div class="Card-head u-relative" data-tracked-action="FacebookLwi learn more card click" data-modal-id="learnFacebookLwi" data-qe-id="Menu-ID-FacebookLwi-CardImage" style="background-color: #EBEDEE; background-image: url(https://imgssl.constantcontact.com/ui/images1/integrations/facebook-nobg-card.png);"></div>
+          <div class="Card-body u-paddingFlush">
+            <span class="js-modal u-padding u-block" data-modal-id="learnFacebookLwi" data-qe-id="Modal-IDFacebookLwi-CardText">
+                                    <h3 class="Card-title">Facebook Lead Ads</h3>
+                                    <h4 class="Card-subtitle">Grow contacts</h4>
+                                </span>
+            <div class="Card-actions Dropdown js-dropdown Dropdown--alignMenuRight" data-menu-alignment="right">
+              <button class="Button Button--iconRound Button--flat trackable Dropdown-toggle" data-tracked-action="open Facebook menu">
+                                    <i class="Icon Icon--moreVertical"></i>
+                                </button>
+              <ul class="Menu">
+                <form class="Form" method="POST" action="/connect/facebook?gotoUrl=https://app.l1.constantcontact.com/pages/lwi/base">
+                  <li data-value="Connect">
+                    <span>
+                                                <button class="u-link u-colorPrimary trackable" data-tracked-action="Connect EventBrite modal" data-qe-id="Menu-ID-FacebookLwi-App" style="text-decoration:none;">
+                                                    <span class="trackable" data-tracked-action="Connect FacebookLwi modal" type="submit">Connect account</span>
+                    </button>
+                    </span>
+                  </li>
+                  <input type="hidden" name="_csrf" value="0c3703db-e472-4da1-844c-fc789e9a2985"></form>
+                <li data-value="Learn more"><span id="facebookDeepLink" href="javascript:void(0)" class="js-modal" data-modal-id="learnFacebookLwi" data-qe-id="Menu-IDFacebookLwi-Modal">Learn more</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--Connected Shopify state no errors-->
+        <div class="Card u-marginLeftFlush u-marginRight">
+          <a id="shopifyconnectedDeepLink" data-qe-id="shopifyDetailsPageImage" href="shopify_landing.html">
+              <div class="Card-head u-relative trackable" data-tracked-action="Shopify learn more card click" style="background-color: #EBEDEE; background-image: url(https://imgssl.constantcontact.com/ui/images1/integrations/shopify-nobg-card.png);"></div>
+          </a>
+          <div class="Card-body u-paddingFlush">
+                  <span class="u-padding u-block u-paddingBottomHalf" data-qe-id="shopifyDetailsPageText" href="shopify_landing.html">
+                      <h3 class="Card-title">Shopify</h3>
+                      <h4 class="Card-subtitle"><div class="Badge Badge--green" style="line-height:3em!important;padding:6px 12px;">Connected</div></h4>
+                  </span>
+              <div class="Card-actions Dropdown js-dropdown Dropdown--alignMenuRight" data-menu-alignment="right">
+                  <button class="Button Button--iconRound Button--flat trackable Dropdown-toggle" data-tracked-action="open Shopify menu">
+                      <i class="Icon Icon--moreVertical"></i>
+                  </button>
+                  <ul class="Menu">
+                      <li data-value="Connect"><span data-tracked-action="overview page shopify menu" data-resource="shopify_landing.html"><span data-qe-id="shopifyDetailsPageLink">View details</span></span></li>
+                      <li data-value="disconnect"><a href="javascript:void(0)" class="js-modal  u-weightNormal u-fontSizeSmall" id="DisconnectShopify" data-modal-id="DisconnectShopifyModal" data-qe-id="Modal-ID-Shopify-Disconnect-trigger"><span>Disconnect</span></a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+
+        <!--bigcommerce -->
+        <div class="Card u-marginLeftFlush u-marginRight">
+          <div class="Card-head u-relative js-modal trackable" data-tracked-action="Bigcommerce learn more card click" data-modal-id="learnBigcommerce" data-qe-id="Modal-IDBigCommercePlaceholder-CardImage" style="background-color: #EBEDEE; background-image: url(https://imgssl.constantcontact.com/ui/images1/integrations/BigCommerce-nobg-card.png);"></div>
+          <div class="Card-body u-paddingFlush">
+            <span class="js-modal u-padding u-block" data-modal-id="learnBigcommerce" data-qe-id="Modal-IDBigCommercePlaceholder-CardText">
+                                    <h3 class="Card-title">BigCommerce</h3>
+                                    <h4 class="Card-subtitle">Sync contacts</h4>
+                                </span>
+            <div class="Card-actions Dropdown js-dropdown Dropdown--alignMenuRight" data-menu-alignment="right">
+              <button class="Button Button--iconRound Button--flat trackable Dropdown-toggle" data-tracked-action="open Bigcommerce menu">
+                                    <i class="Icon Icon--moreVertical"></i>
+                                </button>
+              <ul class="Menu">
+                <form class="Form" method="POST" action="https://www.bigcommerce.com/apps/">
+                  <li data-value="Connect">
+                    <span>
+                                                <button class="u-link u-colorPrimary trackable" data-tracked-action="Connect EventBrite modal" data-qe-id="Menu-ID-bigCommercePlaceholder-App" style="text-decoration:none;">
+                                                    <span class="trackable" data-tracked-action="Connect EventBrite modal" type="submit">Connect account</span>
+                    </button>
+                    </span>
+                  </li>
+                  <input type="hidden" name="_csrf" value="0c3703db-e472-4da1-844c-fc789e9a2985"></form>
+                <li data-value="Learn more"><span id="bigcommerceDeepLink" href="javascript:void(0)" class="js-modal" data-modal-id="learnBigcommerce" data-qe-id="Menu-IDBigCommercePlaceholder-Modal">Learn more</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--unconnected Mindbody state no errors-->
+        <div class="Card u-marginLeftFlush u-marginRight">
+          <div class="Card-head u-relative js-modal trackable" data-modal-id="learnMindbody" data-qe-id="Modal-IDMindbody-CardImage" style="background-color: #EBEDEE; background-image: url(https://imgssl.constantcontact.com/ui/images1/integrations/mindbody-nobg-cards.png);"></div>
+          <div class="Card-body u-paddingFlush">
+            <span class="js-modal u-padding u-block" data-modal-id="learnMindbody" data-qe-id="Modal-IDMindbody-CardText">
+                <h3 class="Card-title">MINDBODY</h3>
+                <h4 class="Card-subtitle">Sync contacts</h4>
+            </span>
+            <div class="Card-actions Dropdown js-dropdown Dropdown--alignMenuRight" data-menu-alignment="right">
+              <button class="Button Button--iconRound Button--flat trackable Dropdown-toggle" data-tracked-action="open Mindbody menu"><i class="Icon Icon--moreVertical"></i></button>
+              <ul class="Menu">
+                <li data-value="Connect"><span data-tracked-action="connect mindbody menu" data-qe-id="Menu-IDMindbody-Connect" data-resource="mindbody_auth.html"> <span>Connect account</span></span>
+                </li>
+                <li data-value="Learn more"><span id="mindbodyDeepLink" href="javascript:void(0)" class="js-modal" data-modal-id="learnMindbody" data-qe-id="Menu-IDMindbody-Modal">Learn more</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--unconnected EventBrite state no errors-->
+        <div class="Card u-marginLeftFlush u-marginRight">
+
+          <div class="Card-head u-relative js-modal trackable" data-tracked-action="Eventbrite learn more card click" data-modal-id="learnEventbrite" data-qe-id="Modal-IDEventbrite-CardImage" style="background-color: #EBEDEE; background-image: url(https://imgssl.constantcontact.com/ui/images1/integrations/eventbrite2-nobg-card.png);"></div>
+
+          <div class="Card-body u-paddingFlush">
+            <span class="js-modal u-padding u-block" data-modal-id="learnEventbrite" data-qe-id="Modal-IDEventBrite-CardText">
+                                    <h3 class="Card-title">Eventbrite</h3>
+                                    <h4 class="Card-subtitle">Add Event</h4>
+                                </span>
+            <div class="Card-actions Dropdown js-dropdown Dropdown--alignMenuRight" data-menu-alignment="right">
+              <button class="Button Button--iconRound Button--flat trackable Dropdown-toggle" data-tracked-action="open EventBrite menu">
+                                    <i class="Icon Icon--moreVertical"></i>
+                                </button>
+              <ul class="Menu">
+                <form class="Form" method="POST" action="/connect/eventbrite?gotoUrl=https://app.l1.constantcontact.com/pages/actionblock/base%23eventbrite">
+                  <li data-value="Connect">
+                    <span>
+                                                <button class="u-link u-colorPrimary trackable" data-tracked-action="Connect EventBrite modal" data-qe-id="Menu-ID-EventBrite-App" style="text-decoration:none;">
+                                                    <span class="trackable" data-tracked-action="Connect EventBrite modal" type="submit">Connect account</span>
+                    </button>
+                    </span>
+                  </li>
+                  <input type="hidden" name="_csrf" value="0c3703db-e472-4da1-844c-fc789e9a2985"></form>
+
+                <li data-value="Learn more"><span id="eventbriteDeepLink" href="javascript:void(0)" class="js-modal" data-modal-id="learnEventbrite" data-qe-id="Menu-IDEventbrite-Modal">Learn more</span></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--unconnected SurveyMonkey state no errors-->
+        <div class="Card u-marginLeftFlush u-marginRight">
+          <div class="Card-head u-relative js-modal trackable" data-tracked-action="SurveyMonkey learn more card click" data-modal-id="learnSurveyMonkey" data-qe-id="Modal-IDSurveyMonkey-CardImage" style="background-color: #EBEDEE; background-image: url(https://imgssl.constantcontact.com/ui/images1/integrations/surveymonkey-nobg-card.png);"></div>
+          <div class="Card-body u-paddingFlush">
+            <span class="js-modal u-padding u-block" data-modal-id="learnSurveyMonkey" data-qe-id="Modal-IDSurveyMonkey-CardText">
+                                    <h3 class="Card-title">SurveyMonkey</h3>
+                                    <h4 class="Card-subtitle">Add Survey</h4>
+                                </span>
+            <div class="Card-actions Dropdown js-dropdown Dropdown--alignMenuRight" data-menu-alignment="right">
+              <button class="Button Button--iconRound Button--flat trackable Dropdown-toggle" data-tracked-action="open SurveyMonkey menu">
+                                    <i class="Icon Icon--moreVertical"></i>
+                                </button>
+              <ul class="Menu">
+                <form class="Form" method="POST" action="/connect/surveymonkey?gotoUrl=https://app.l1.constantcontact.com/pages/actionblock/base%23surveymonkey">
+                  <li data-value="Connect">
+                    <span>
+                                                <button class="u-link u-colorPrimary trackable" data-tracked-action="Connect SurveyMonkey modal" data-qe-id="Menu-ID-SurveyMonkey-App" style="text-decoration:none;">
+                                                    <span class="trackable" data-tracked-action="Connect SurveyMonkey modal" type="submit">Connect account</span>
+                    </button>
+                    </span>
+                  </li>
+                  <input type="hidden" name="_csrf" value="0c3703db-e472-4da1-844c-fc789e9a2985"></form>
+
+                <li data-value="Learn more"><span id="surveymonkeyDeepLink" href="javascript:void(0)" class="js-modal" data-modal-id="learnSurveyMonkey" data-qe-id="Menu-SurveyMonkey-Modal">Learn more</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--unconnected office 365-->
+        <div class="Card u-marginLeftFlush u-marginRight">
+          <div class="Card-head u-relative js-modal trackable" data-tracked-action="office 365 learn more card click" data-modal-id="learnOffice365" data-qe-id="Modal-IDOffice365-CardImage" style="background-color: #EBEDEE; background-image: url(https://imgssl.constantcontact.com/ui/images1/integrations/office365-nobg-card.png);"></div>
+          <div class="Card-body u-paddingFlush">
+            <span class="js-modal u-padding u-block" data-modal-id="learnOffice365" data-qe-id="Modal-IDOffice365-CardText">
+                                    <h3 class="Card-title">Office 365</h3>
+                                    <h4 class="Card-subtitle">Import contacts</h4>
+                                </span>
+            <div class="Card-actions Dropdown js-dropdown Dropdown--alignMenuRight" data-menu-alignment="right">
+              <button class="Button Button--iconRound Button--flat trackable Dropdown-toggle" data-tracked-action="open Office365 menu">
+                                    <i class="Icon Icon--moreVertical"></i>
+                                </button>
+              <ul class="Menu">
+                <form class="Form" method="POST" action="/connect/outlook365?gotoUrl=https://app.l1.constantcontact.com/pages/lis/outlookimport">
+                  <li data-value="Import contacts">
+                    <span>
+                                                <button class="u-link u-colorPrimary trackable" data-tracked-action="import contacts Office 365 modal" data-qe-id="Menu-ID-IDOffice365-App" style="text-decoration:none;">
+                                                    <span class="trackable" data-tracked-action="import contacts Office 365 modal" type="submit">Import contacts</span>
+                    </button>
+                    </span>
+                  </li>
+                  <input type="hidden" name="_csrf" value="0c3703db-e472-4da1-844c-fc789e9a2985"></form>
+
+                <li data-value="Learn more"><span id="outlook365DeepLink" class="js-modal" data-modal-id="learnOffice365" data-qe-id="Menu-IDOffice365-Modal">Learn more</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--Quickbooks-->
+        <div class="Card u-marginLeftFlush u-marginRight">
+          <div class="Card-head u-relative js-modal trackable" data-tracked-action="QuickBooks learn more card click" data-modal-id="learnQuickbooks" data-qe-id="Modal-IDQuickbooks-CardImage" style="background-color: #EBEDEE; background-image: url(https://imgssl.constantcontact.com/ui/images1/integrations/quickbooks-nobg-card.png);"></div>
+          <div class="Card-body u-paddingFlush">
+            <span class="js-modal u-padding u-block" data-modal-id="learnQuickbooks" data-qe-id="Modal-IDQuickbooks-CardText">
+                                    <h3 class="Card-title">QuickBooks Online App</h3>
+                                    <h4 class="Card-subtitle">Import contacts</h4>
+                                </span>
+            <div class="Card-actions Dropdown js-dropdown Dropdown--alignMenuRight" data-menu-alignment="right">
+              <button class="Button Button--iconRound Button--flat trackable Dropdown-toggle" data-tracked-action="open Quickbooks menu">
+                                    <i class="Icon Icon--moreVertical"></i>
+                                </button>
+              <ul class="Menu">
+                <li data-value="Import contacts"><span data-new-window="true" data-tracked-action="get this app QuickBooks menu" data-qe-id="Menu-IDQuickbooks-App" data-resource="https://appcenter.intuit.com/constantcontact?CID=par_ConContact_web_CTCT_marketplace"><span>Get this App</span></span>
+                </li>
+                <li data-value="Learn more"><span id="quickbooksDeepLink" href="javascript:void(0)" class="js-modal" data-modal-id="learnQuickbooks" data-qe-id="Menu-IDQuickbooks-Modal">Learn more</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--Outlook-->
+        <div class="Card u-marginLeftFlush u-marginRight">
+          <div class="Card-head u-relative js-modal trackable" data-tracked-action="Outlook learn more card click" data-modal-id="learnOutlook" data-qe-id="Modal-IDOutlook-CardImage" style="background-color: #EBEDEE; background-image: url(https://imgssl.constantcontact.com/ui/images1/integrations/outlook-nobg-card.png);"></div>
+          <div class="Card-body u-paddingFlush">
+            <span class="js-modal u-padding u-block" data-modal-id="learnOutlook" data-qe-id="Modal-IDOutlook-CardText">
+                                    <h3 class="Card-title">Outlook Desktop</h3>
+                                    <h4 class="Card-subtitle">Import contacts</h4>
+                                </span>
+            <div class="Card-actions Dropdown js-dropdown Dropdown--alignMenuRight" data-menu-alignment="right">
+              <button class="Button Button--iconRound Button--flat trackable Dropdown-toggle" data-tracked-action="open Outlook menu">
+                                    <i class="Icon Icon--moreVertical"></i>
+                                </button>
+              <ul class="Menu">
+                <li data-value="Connect"><span data-new-window="true" data-tracked-action="get this app Outlook menu" data-qe-id="Menu-IDOutlook-App" data-resource="http://ui.l1.constantcontact.com/rnavmap/em/contacts/addImport/downloadOutlook"> <span>Get this Add-in</span></span>
+                </li>
+                <li data-value="Learn more"><span id="outlookdesktopDeepLink" href="javascript:void(0)" class="js-modal" data-modal-id="learnOutlook" data-qe-id="Menu-IDOutlook-Modal">Learn more</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--gmail-->
+        <div class="Card u-marginLeftFlush u-marginRight">
+          <div class="Card-head u-relative js-modal trackable" data-tracked-action="Google learn more card click" data-modal-id="learnGoogle" data-qe-id="Modal-IDGoogle-CardImage" style="background-color: #EBEDEE; background-image: url(https://imgssl.constantcontact.com/ui/images1/integrations/google-nobg-card.png);"></div>
+          <div class="Card-body u-paddingFlush">
+            <span class="js-modal u-padding u-block" data-modal-id="learnGoogle" data-qe-id="Modal-IDGoogle-CardText">
+                                    <h3 class="Card-title">Google</h3>
+                                    <h4 class="Card-subtitle">Import contacts</h4>
+                                </span>
+            <div class="Card-actions Dropdown js-dropdown Dropdown--alignMenuRight" data-menu-alignment="right">
+              <button class="Button Button--iconRound Button--flat trackable Dropdown-toggle" data-tracked-action="open Google menu">
+                                    <i class="Icon Icon--moreVertical"></i>
+                                </button>
+              <ul class="Menu">
+                <li data-value="Import contacts"><span data-new-window="true" data-tracked-action="get this app Google menu" data-qe-id="Menu-IDGoogle-App" data-resource="https://ui.l1.constantcontact.com/rnavmap/distui/contacts#imports/new_by_google"><span>Import contacts</span></span>
+                </li>
+                <li data-value="Learn more"><span id="googleDeepLink" href="javascript:void(0)" class="js-modal" data-modal-id="learnGoogle" data-qe-id="Menu-IDGoogle-Modal">Learn more</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--Salesforce-->
+        <div class="Card u-marginLeftFlush u-marginRight">
+          <div class="Card-head u-relative js-modal trackable" data-tracked-action="Salesforce learn more card click" data-modal-id="learnSalesforce" data-qe-id="Modal-IDSalesforce-CardImage" style="background-color: #EBEDEE; background-image: url(https://imgssl.constantcontact.com/ui/images1/integrations/salesforce2-nobg-card.png);"></div>
+          <div class="Card-body u-paddingFlush">
+            <span class="js-modal u-padding u-block" data-modal-id="learnSalesforce" data-qe-id="Modal-IDSalesforce-CardText">
+                                    <h3 class="Card-title">Salesforce by Cazoomi</h3>
+                                    <h4 class="Card-subtitle">Import contacts</h4>
+                                </span>
+            <div class="Card-actions Dropdown js-dropdown Dropdown--alignMenuRight" data-menu-alignment="right">
+              <button class="Button Button--iconRound Button--flat trackable Dropdown-toggle" data-tracked-action="open Salesforce menu">
+                                    <i class="Icon Icon--moreVertical"></i>
+                                </button>
+              <ul class="Menu">
+                <li data-value="Import contacts"><span data-tracked-action="get this app Salesforce menu" data-new-window="true" data-qe-id="Menu-IDSalesforce-App" data-resource="https://www.cazoomi.com/syncapps/salesforce-com-to-constant-contact/"><span>Get this App</span></span>
+                </li>
+                <li data-value="Learn more"><span id="salesforceDeepLink" class="js-modal" data-modal-id="learnSalesforce" data-qe-id="Menu-IDSalesforce-Modal">Learn more</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--wordpress-->
+        <div class="Card u-marginLeftFlush u-marginRight">
+          <div class="Card-head u-relative js-modal trackable" data-tracked-action="Wordpress learn more card click" data-modal-id="learnWordpress" data-qe-id="Modal-IDWordpress-CardImage" style="background-color: #EBEDEE; background-image: url(https://imgssl.constantcontact.com/ui/images1/integrations/wordpress-nobg-card.png);"></div>
+          <div class="Card-body u-paddingFlush">
+            <span class="js-modal u-padding u-block" data-modal-id="learnWordpress" data-qe-id="Modal-IDWordpress-CardText">
+                                    <h3 class="Card-title">WordPress Plugin</h3>
+                                    <h4 class="Card-subtitle">Sign-up Form</h4>
+                                </span>
+            <div class="Card-actions Dropdown js-dropdown Dropdown--alignMenuRight" data-menu-alignment="right">
+              <button class="Button Button--iconRound Button--flat trackable Dropdown-toggle" data-tracked-action="open Wordpress menu">
+                                    <i class="Icon Icon--moreVertical"></i>
+                                </button>
+              <ul class="Menu">
+                <li data-value="Import contacts"><span data-new-window="true" data-tracked-action="get this app wordpress menu" data-qe-id="Menu-IDWordpress-App" data-resource="https://wordpress.org/plugins/constant-contact-forms/"> <span>Get this Plugin</span></span>
+                </li>
+                <li data-value="Learn more"><span id="wordpressDeepLink" href="javascript:void(0)" data-tracked-action=" wordpress menu" class="js-modal trackable" data-modal-id="learnWordpress" data-qe-id="Menu-IDWordpress-Modal">Learn more</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--facebook-->
+        <div class="Card u-marginLeftFlush u-marginRight">
+          <div class="Card-head u-relative js-modal trackable" data-tracked-action="Facebook learn more card click" data-modal-id="learnFacebook" data-qe-id="Modal-IDFacebook-CardImage" style="background-color: #EBEDEE; background-image: url(https://imgssl.constantcontact.com/ui/images1/integrations/facebook-nobg-card.png);"></div>
+          <div class="Card-body u-paddingFlush">
+            <span class="js-modal u-padding u-block" data-modal-id="learnFacebook" data-qe-id="Modal-IDFacebook-CardText">
+                                    <h3 class="Card-title">Facebook</h3>
+                                    <h4 class="Card-subtitle">Sign-up Form</h4>
+                                </span>
+            <div class="Card-actions Dropdown js-dropdown Dropdown--alignMenuRight" data-menu-alignment="right">
+              <button class="Button Button--iconRound Button--flat trackable Dropdown-toggle" data-tracked-action="open Facebook menu">
+                                    <i class="Icon Icon--moreVertical"></i>
+                                </button>
+              <ul class="Menu">
+                <li data-value="Import contacts"><span data-tracked-action="get this app Facebook menu" data-new-window="true" data-qe-id="Menu-IDFacebook-App" data-resource="https://apps.facebook.com/lonefbjmml/"> <span>Get this App</span></span>
+                </li>
+                <li data-value="Learn more"><span id="facebookjmmlDeepLink" href="javascript:void(0)" class="js-modal" data-modal-id="learnFacebook" data-qe-id="Menu-IDFacebook-Modal">Learn more</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--List builder card-->
+        <div class="Card u-marginLeftFlush u-marginRight">
+          <div class="Card-head u-relative js-modal trackable" data-tracked-action="ListBuilder learn more card click" data-modal-id="learnListBuilder" data-qe-id="Modal-IDListBuilder-CardImage" style="background-color: #EBEDEE; background-image: url(https://imgssl.constantcontact.com/ui/images1/integrations/ListBuilderLogo.png); background-size: 25%"></div>
+          <div class="Card-body u-paddingFlush">
+            <span class="js-modal u-padding u-block" data-modal-id="learnListBuilder" data-qe-id="Modal-IDListBuilder-CardText">
+                                    <h3 class="Card-title">ListBuilder App</h3>
+                                    <h4 class="Card-subtitle">Tablet Sign-up Form</h4>
+                                </span>
+            <div class="Card-actions Dropdown js-dropdown Dropdown--alignMenuRight" data-menu-alignment="right">
+              <button class="Button Button--iconRound Button--flat trackable Dropdown-toggle" data-tracked-action="open ListBuilder menu">
+                                    <i class="Icon Icon--moreVertical"></i>
+                                </button>
+              <ul class="Menu">
+                <li data-value="apple">
+                  <a target="_blank" href="https://itunes.apple.com/app/apple-store/id1059782568"><span>Get for iOS</span></a>
+                </li>
+                <li data-value="google">
+                  <a target="_blank" href="https://play.google.com/store/apps/details?id=com.constantcontact.jmml&amp;referrer=utm_campaign%3Dmarketplace%26utm_medium%3Dbutton%26utm_source%3Dweb"><span>Get for Android</span></a>
+                </li>
+                <li data-value="Learn more"><span id="listbuilderDeepLink" href="javascript:void(0)" class="js-modal" data-modal-id="learnListBuilder" data-qe-id="Menu-ListBuilder-Modal">Learn more</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile App card-->
+        <div class="Card u-marginLeftFlush u-marginRight">
+          <div class="Card-head u-relative js-modal trackable" data-tracked-action="CTCTApp learn more card click" data-modal-id="CTCTMobileApp" data-qe-id="Modal-IDCTCTMobileApp-CardImage" style="background-color: #EBEDEE; background-image: url(https://imgssl.constantcontact.com/ui/images1/integrations/CTCTAppLogo.png); background-size: 25%"></div>
+          <div class="Card-body u-paddingFlush">
+            <span class="js-modal u-padding u-block" data-modal-id="CTCTMobileApp" data-qe-id="Modal-IDCTCTMobileApp-CardText">
+                                    <h3 class="Card-title">Constant Contact App</h3>
+                                    <h4 class="Card-subtitle">Mobile Email Marketing</h4>
+                                </span>
+            <div class="Card-actions Dropdown js-dropdown Dropdown--alignMenuRight" data-menu-alignment="right">
+              <button class="Button Button--iconRound Button--flat trackable Dropdown-toggle" data-tracked-action="open CTCTMobileApp menu">
+                                    <i class="Icon Icon--moreVertical"></i>
+                                </button>
+              <ul class="Menu">
+                <li data-value="apple">
+                  <a target="_blank" href="https://itunes.apple.com/us/app/constant-contact-toolkit/id880731821?ls=1&amp;mt=8"><span>Get for iOS</span></a>
+                </li>
+                <li data-value="google">
+                  <a target="_blank" href="https://play.google.com/store/apps/details?id=com.constantcontact.toolkit"><span>Get for Android</span></a>
+                </li>
+                <li data-value="Learn more"><span id="ctctmobileDeepLink" href="javascript:void(0)" class="js-modal" data-modal-id="CTCTMobileApp" data-qe-id="Menu-CTCTMobileApp-Modal">Learn more</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <p class="u-textCenter u-fontSizeSmall u-marginTopDouble u-marginBottomHalf u-paddingRight"><a class="" target="_blank" data-qe-id="Card-Feedback" href="https://constantcontact.qualtrics.com/jfe/form/SV_1YzTr4mky6Q2iGN?SOID=1100554495491"><span>Suggest an integration</span></a><span class="u-paddingSidesHalf">|</span>
+        <a class="delayed" data-tracked-action="MarketplaceLink" target="_blank" data-qe-id="MarketplaceLink" href="http://www.constantcontact.com/apps-integrations"><span>Visit our marketplace</span></a></p>
+    </div>
+  </div>
+
+  <script src="https://static.ctctcdn.com/h/fed-framework/1.4.1/fed.min.js"></script>
+  <script>
+    $('.js-modal').fedModal();
+    $('.js-dropdown').fedDropdown({select: function(event, data){
+      if(data.value != "Learn more") {
+          if (data.value != "disconnect") {
+              var targetedSpan = $(event.target).find("span");
+              var dataTrackedAction = targetedSpan.attr("data-tracked-action");
+              var dataOpen = targetedSpan.attr("data-new-window");
+              var url = targetedSpan.attr("data-resource");
+              
+              if (url != null) {
+                  if (dataOpen) {
+                      window.open(url, '_blank');
+                  } else {
+                      setTimeout(function () { //Setting a time out to give distui a chance to track before we move away
+                          window.location.href = url;
+                      }, 100);
+                  }
+              }
+          }
+      }
+  }});
+  </script>
+
+</body>
+
+</html>
